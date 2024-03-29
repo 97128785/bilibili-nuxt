@@ -13,11 +13,11 @@ defineProps<{ item: VideoItem }>()
       <div class="count">
         <span>
           <i class="iconfont icon_shipin_bofangshu"></i>
-          {{ item.stat.view }}
+          {{ parseView(item.stat.view) }}
         </span>
         <span>
           <i class="iconfont icon_shipin_danmushu"></i>
-          {{ item.stat.danmaku }}
+          {{ parseView(item.stat.danmaku) }}
         </span>
       </div>
     </div>
