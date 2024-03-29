@@ -4,5 +4,5 @@
  */
 export const parseView = (view: number) => {
   if (view === 0) return '--'
-  return view > 10000 ? `&{(view / 10000).toFixed(1)}万` : view
+  return view > 10000 ? `${(view / 10000).toFixed(1)}万` : view
 }
